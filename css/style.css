@@ -987,6 +987,7 @@ label #cancel {
   float: right;
 }
 .portfolio .panels {
-  width: 100vw;
+  width: 98vw;
   margin-left: calc(50% - 50vw);
+  padding-left: 2%;
 }
