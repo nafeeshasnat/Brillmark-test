@@ -797,7 +797,7 @@ label #cancel {
 }
 
 /* working process TAB */
-.tab-warpper {
+.process .tab-warpper {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -823,7 +823,6 @@ label #cancel {
 .panels {
   min-height: 200px;
   width: 100%;
-  max-width: 500px;
   overflow: hidden;
 }
 .panel {
@@ -892,4 +891,102 @@ label #cancel {
 #five:hover ~ .tabs #five-tab span {
   display: inline;
   color: #ffffff;
+}
+@media (max-width: 1000px) {
+  .grid-process {
+    grid-template-columns: 0fr 1fr;
+    margin: 0 10% 0 10%;
+    justify-content: right;
+  }
+  .tab-warpper {
+    align-items: center;
+  }
+  .grid-item2 {
+    justify-content: right;
+  }
+  .grid-item2 a::before {
+    left: 40%;
+  }
+  .grid-item2 a {
+    margin-left: 37%;
+  }
+}
+
+/* -------------------------- */
+/* portfolio */
+/* -------------------------- */
+
+.portfolio {
+  background-color: #1d1d1d;
+  padding: 200px 0 150px 0;
+}
+.portfolio span {
+  color: #be9e21;
+  text-transform: uppercase;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+.portfolio h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 0 40px 0;
+}
+.tab {
+  text-transform: uppercase;
+}
+
+#oneport:checked ~ .panels #one-panelport,
+#twoport:checked ~ .panels #two-panelport,
+#threeport:checked ~ .panels #three-panelport,
+#fourport:checked ~ .panels #four-panelport {
+  display: block;
+  transition: all 0.5s;
+}
+#oneport:checked ~ .tabs #one-tabport,
+#twoport:checked ~ .tabs #two-tabport,
+#threeport:checked ~ .tabs #three-tabport,
+#fourport:checked ~ .tabs #four-tabport {
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.tabs #one-tabport:before,
+.tabs #two-tabport:before,
+.tabs #three-tabport:before,
+.tabs #four-tabport:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: #be9e21;
+  margin-top: 25px;
+  margin-left: -3px;
+  transition: all 0.5s;
+}
+
+#oneport:checked ~ .tabs #one-tabport:before,
+#twoport:checked ~ .tabs #two-tabport:before,
+#threeport:checked ~ .tabs #three-tabport:before,
+#fourport:checked ~ .tabs #four-tabport:before {
+  width: 20px;
+}
+#one-tabport:hover::before,
+#two-tabport:hover::before,
+#three-tabport:hover::before,
+#four-tabport:hover::before {
+  width: 20px;
+}
+#oneport:hover ~ .tabs #one-tabportport,
+#twoport:hover ~ .tabs #two-tabport,
+#threeport:hover ~ .tabs #three-tabport,
+#fourport:hover ~ .tabs #four-tabport {
+  color: #ffffff;
+}
+.portfolio .tab-warpper .tabs {
+  float: right;
+}
+.portfolio .panels {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
