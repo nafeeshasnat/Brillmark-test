@@ -9,6 +9,7 @@
   <meta name="author" content="SitePoint">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
+  <link rel="stylesheet" href="img-slider/splide.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -16,6 +17,7 @@
 </head>
 
 <body>
+    <script src="img-slider/splide.min.js"></script>
     <header>
         <nav class="container">
             <input type="checkbox" id="check">
@@ -363,7 +365,7 @@
             <span>our portfolio</span>
             <h2>beautiful portfolio</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam<br> nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-            <div class="tab-warpper">
+            <div class="tab-warpper container-tab">
                 <input class="radio" id="oneport" name="group1" type="radio" checked>
                 <input class="radio" id="twoport" name="group1" type="radio">
                 <input class="radio" id="threeport" name="group1" type="radio">
@@ -376,13 +378,44 @@
                 </div>
                 <div class="panels">
                     <div class="panel" id="one-panelport">
-                        <div class="panel-title">01.</div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer addipisscing sed diam nonummy nibh euismod tincidunt ut lasoreety dolore magna aliquam erat volutpat. Ut wisi 
-                            “enim adsu minim veniam”, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                            <br><br>
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit essensial molestie consequat, vel illum dolore eu feugiat nulla 
-                            facilisis at vero eros et accumsan et iusto odio dignissim.
-                        </p>
+                        <div id="secondary-slider" class="splide">
+                            <div class="splide__arrows ">
+                                <button class="splide__arrow splide__arrow--prev">
+                                    <img src="img/line.png"/> PREV
+                                </button>
+                                <button class="splide__arrow splide__arrow--next">
+                                    Next <img src="img/line.png">
+                                </button>
+                            </div>
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/slide-img.png">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="panel" id="two-panelport">
                         <div class="panel-title">02.</div>
@@ -416,9 +449,63 @@
         </div>
     </section>
 
+    <section class="reason">
+        <div class="container">
+            <div class="reason-grid">
+                <div class="reason-grid1">
+                    <span>our features</span>
+                    <h2>The reason work<br>with us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam 
+                        erat volutpat. Ut wisi enim ad minim veniam.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+                    </p>
+                </div>
+                <div class="reason-grid2">
+                    <div class="reason-features">
+                        <div class="features-grid-area">
+                            <img src="img/icons/responsive.png">
+                            <h3>100% responsive</h3>
+                            <p>Lorem ipsum dolor sit amet conetuer delgado diam nonummy.</p>
+                        </div>
+                        <div class="features-grid-area">
+                            <img src="img/icons/responsive.png">
+                            <h3>100% responsive</h3>
+                            <p>Lorem ipsum dolor sit amet conetuer delgado diam nonummy.</p>
+                        </div>
+                        <div class="features-grid-area">
+                            <img src="img/icons/responsive.png">
+                            <h3>100% responsive</h3>
+                            <p>Lorem ipsum dolor sit amet conetuer delgado diam nonummy.</p>
+                        </div>
+                        <div class="features-grid-area">
+                            <img src="img/icons/responsive.png">
+                            <h3>100% responsive</h3>
+                            <p>Lorem ipsum dolor sit amet conetuer delgado diam nonummy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="container">
+                <span>Don't miss it</span>
+                <h2>volter creative PSD template</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam nonummy nibh euismod tincidunt ut laoreet<br> 
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                </p>
+                <img src="img/mac.png">
+                <a href="#" class="button">purches now</a>
+            </div>
+        </div>
+    </section>
 
 
 
-  <script src="js/scripts.js"></script>
+    
+  <script src="js/script.js"></script>
+  
 </body>
 </html>

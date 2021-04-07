@@ -931,6 +931,9 @@ label #cancel {
   font-size: 40px;
   margin: 30px 0 40px 0;
 }
+.container-tab {
+  margin-top: -50px;
+}
 .tab {
   text-transform: uppercase;
 }
@@ -986,8 +989,135 @@ label #cancel {
 .portfolio .tab-warpper .tabs {
   float: right;
 }
+.portfolio .tab {
+  border-right: 0;
+}
 .portfolio .panels {
   width: 98vw;
   margin-left: calc(50% - 50vw);
   padding-left: 2%;
+}
+#secondary-slider {
+  padding-bottom: 60px;
+}
+
+.splide__slide img {
+  width: 370px;
+  height: 400px;
+}
+.splide__arrow {
+  width: 0;
+  height: 0;
+  top: 33em;
+  background: transparent;
+  color: #666666;
+  opacity: 1;
+}
+.splide__arrow--next {
+  right: 0;
+}
+.splide__arrow--prev img {
+  margin-right: 5px;
+}
+.splide__arrow--next img {
+  margin-left: 5px;
+}
+.splide__arrows {
+  position: relative;
+  width: 1150px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .container-tab {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .splide__arrows {
+    display: none;
+  }
+}
+
+/* -------------------------- */
+/* reason */
+/* -------------------------- */
+.reason {
+  background-color: #131313;
+  padding-top: 150px;
+}
+.reason-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.reason-grid1 span {
+  color: #be9e21;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+.reason-grid1 h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 35px 0 50px 0;
+}
+.reason-grid1 p {
+  padding-bottom: 50px;
+  padding-right: 100px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.reason-grid2 .reason-features {
+  padding-top: 150px;
+  display: grid;
+  gap: 100px;
+  grid-template-areas:
+    "1fr 1fr"
+    "1fr 1fr";
+}
+.features-grid-area img {
+  padding-bottom: 15px;
+}
+.features-grid-area h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.features-grid-area p {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.template {
+  background-image: url(../img/templatebg.png);
+  background-color: #131313;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 170px 0 150px 0;
+  text-align: center;
+}
+.template span {
+  color: #be9e21;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+.template h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 20px 0 40px 0;
+}
+.template p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #b3b3b3;
+  padding-bottom: 50px;
+}
+.template img {
+  padding-bottom: 40px;
+}
+.template .button {
+  word-spacing: 5px;
+  margin-left: 50px;
 }
