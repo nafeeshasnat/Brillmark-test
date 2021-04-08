@@ -1094,9 +1094,6 @@ label #cancel {
 }
 
 .template {
-  /* background-image: url(../img/templatebg.png);
-  background-size: cover;
-  background-repeat: no-repeat; */
   padding: 170px 0 150px 0;
   text-align: center;
 }
@@ -1143,4 +1140,123 @@ label #cancel {
     grid-template-areas: none;
     text-align: center;
   }
+}
+
+/* -------------------------- */
+/* blog */
+/* -------------------------- */
+.blog {
+  background-color: #1f1f1f;
+  padding: 150px 0 150px 0;
+}
+
+.blog-head {
+  text-align: center;
+}
+.blog-head span {
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+.blog-head h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 30px 0 45px 0;
+}
+.blog-head p {
+  color: #b3b3b3;
+  line-height: 1.5;
+}
+.blog-grid {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d d"
+    "e e f";
+}
+.blog-grid-a {
+  grid-area: a;
+}
+.blog-grid-b {
+  grid-area: b;
+}
+.blog-grid-c {
+  grid-area: c;
+}
+.blog-grid-d {
+  grid-area: d;
+}
+.blog-grid-e {
+  grid-area: e;
+}
+.blog-grid-f {
+  grid-area: f;
+}
+.blog-grid-item {
+  padding-top: 90px;
+}
+.blog-content-right {
+  padding: 100px 0 0 40px;
+}
+.blog-content h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+.blog-content span {
+  position: relative;
+  color: #be9e21;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 40px;
+}
+.blog-content-right span::before {
+  position: absolute;
+  left: 0;
+  top: -7px;
+  content: "";
+  width: 3px;
+  height: 60px;
+  background-color: #be9e21;
+}
+.blog-content .date {
+  display: inline;
+}
+.blog-content p {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+.blog-short-des {
+  margin: 10px 0 70px 40px;
+}
+.blog-content a {
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.blog-content a:hover {
+  color: #be9e21;
+}
+.blog-content img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blog-content-left {
+  text-align: right;
+}
+.blog-content-left {
+  padding: 100px 60px 0 0;
+}
+.blog-content-left .date,
+.blog-content-left .blog-short-des {
+  padding-right: 40px;
+  position: relative;
+}
+.blog-content-left .date::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 60px;
+  background-color: #be9e21;
+  top: -7px;
+  right: 0;
 }
