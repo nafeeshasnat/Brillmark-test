@@ -18,6 +18,7 @@
   padding: 10px 20px;
   background: transparent;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
 /* -------------------------- */
 /* LOGO AND NAVIGATION BAR */
@@ -355,22 +356,22 @@ label #cancel {
   align-items: flex-start;
   text-align: right;
 }
-#whoslide1:checked ~ #slides .inner {
+#whoslide10:checked ~ #slides .inner {
   margin-left: 0;
 }
-#whoslide2:checked ~ #slides .inner {
+#whoslide20:checked ~ #slides .inner {
   margin-left: -100%;
 }
-#whoslide3:checked ~ #slides .inner {
+#whoslide30:checked ~ #slides .inner {
   margin-left: -200%;
 }
-#whoslide4:checked ~ #slides .inner {
+#whoslide40:checked ~ #slides .inner {
   margin-left: -300%;
 }
-#whoslide1:checked ~ #whobullets label:nth-child(1),
-#whoslide2:checked ~ #whobullets label:nth-child(2),
-#whoslide3:checked ~ #whobullets label:nth-child(3),
-#whoslide4:checked ~ #whobullets label:nth-child(4) {
+#whoslide10:checked ~ #whobullets label:nth-child(1),
+#whoslide20:checked ~ #whobullets label:nth-child(2),
+#whoslide30:checked ~ #whobullets label:nth-child(3),
+#whoslide40:checked ~ #whobullets label:nth-child(4) {
   color: #fff;
   padding-bottom: 3px;
   border-bottom: 2px solid #be9e21;
@@ -598,6 +599,10 @@ label #cancel {
   width: 3px;
   height: 65px;
   margin-top: 45px;
+}
+.service-button .button:hover {
+  background-color: #be9e21;
+  border: 1px solid #be9e21;
 }
 .services .grid-item:last-child .service-button {
   margin-top: 90px;
@@ -1014,7 +1019,7 @@ label #cancel {
   opacity: 1;
 }
 .splide__arrow--next {
-  right: 0;
+  right: 4%;
 }
 .splide__arrow--prev img {
   margin-right: 5px;
@@ -1033,6 +1038,9 @@ label #cancel {
 @media (max-width: 1100px) {
   .container-tab {
     margin-top: 20px;
+  }
+  .splide__arrow {
+    display: none;
   }
 }
 @media (max-width: 600px) {
@@ -1123,6 +1131,11 @@ label #cancel {
   background-color: #be9e21;
   font-weight: 600;
   border: none;
+  transition: all 0.5s;
+}
+.template .button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 /* responsive */
 @media (max-width: 1100px) {
@@ -1259,4 +1272,128 @@ label #cancel {
   background-color: #be9e21;
   top: -7px;
   right: 0;
+}
+.blog-button {
+  text-align: center;
+  padding-top: 90px;
+}
+.blog-button a {
+  transition: all 0.5s;
+}
+.blog-button a:hover {
+  background-color: #be9e21;
+  border: 1px solid #be9e21;
+}
+
+@media (max-width: 1170px) {
+  .blog-grid-item-img img {
+    width: 100%;
+  }
+  .blog-grid {
+    padding: 0 20px;
+  }
+  .blog-content {
+    padding-top: 0;
+  }
+}
+
+/* Resposive */
+@media (max-width: 830px) {
+  .blog-content h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .blog-grid {
+    grid-template-areas:
+      "a"
+      "b"
+      "d"
+      "c"
+      "e"
+      "f";
+  }
+  .blog-content-left {
+    padding-right: 30px;
+  }
+}
+
+/* -------------------------- */
+/* blog */
+/* -------------------------- */
+
+footer {
+  padding: 150px 0 0 0;
+  background-color: #131313;
+  text-align: center;
+}
+footer img {
+  width: auto;
+}
+footer p {
+  padding: 50px 20px;
+  color: #b3b3b3;
+  line-height: 1.5;
+}
+footer .social-icons {
+  display: inline-flex;
+}
+#icon-text {
+  display: none;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #be9e21;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+footer i {
+  padding: 20px;
+  font-size: 20px;
+  color: #555555;
+  border-right: 1px solid #333333;
+}
+.social-fb:hover > .fab,
+.social-pin:hover > .fab,
+.social-twit:hover > .fab,
+.social-beh:hover > .fab,
+.social-ball:hover > .fas {
+  display: none;
+}
+.social-fb:hover #icon-text,
+.social-pin:hover > #icon-text,
+.social-twit:hover > #icon-text,
+.social-beh:hover > #icon-text,
+.social-ball:hover > #icon-text {
+  display: inline-flex;
+}
+.brand-img {
+  padding: 100px 0 60px 0;
+}
+.brand-img a {
+  padding-right: 10px;
+}
+.brand-img a:last-child {
+  padding: 0;
+}
+.white-img {
+  opacity: 0.3;
+}
+.brand-img a:hover {
+  opacity: 0.5;
+}
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+}
+footer span {
+  color: #be9e21;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .brand-img {
+    display: none;
+  }
 }
